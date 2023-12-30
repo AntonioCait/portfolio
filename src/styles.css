@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*css color variables*/
+
+:root {
+  --bg-left: #e8f6ef;
+  --bg-right: #dce7f8;
+  --bg-card: #fefefe;
+  --text-card: #0e1726;
+  --nav-bg: #fefefe;
+  --nav-text: #0e1726;
+  --bg-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+  --text-white: #fff;
+  --text-primary: #0e1726;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background color made of gradients of white left to white right*/
+  background: linear-gradient(90deg, var(--bg-left) 0%, var(--bg-right) 100%);
+  /*background: linear-gradient(90deg, #1a1a1a 0%, #28292a 100%);*/
+  /*anti-aliasing*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*scrollbar black*/
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--bg-left) 0%, var(--bg-right) 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/*hidde scrollbar but keep allowing scrolling*/
+
+
+/*
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+ */
+
+
+
+
+
+
+
+

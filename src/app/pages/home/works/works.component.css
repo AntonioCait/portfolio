@@ -1,0 +1,38 @@
+.work-card {
+  padding: 25px;
+  box-shadow: var(--bg-shadow);
+  border-radius: 10px;
+  background-color: var(--bg-card);
+  .work-company-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin:0;
+    padding: 0;
+    color: var(--text-card);
+    h4{
+      margin:0;
+      padding: 0;
+    }
+  }
+  .work-company-position {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0 ;
+    padding: 0;
+    color: var(--text-card);
+  }
+  .work-company-date{
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin: 0 ;
+    padding: 0;
+    color: var(--text-card);
+  }
+  .work-company-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: var(--text-card);
+  }
+}

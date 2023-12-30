@@ -1,0 +1,54 @@
+<section class="main-section-home">
+  <div class="main-section-home-title-container">
+    <h1 class="main-section-home-title">About me</h1>
+  </div>
+  <div class="about-card-container">
+    @if (aboutData){
+      <ng-container>
+        @defer {
+          @for (about of aboutData; track about.title){
+            <div class="about-card">
+              <figure class="about-card-image">
+                <img [priority]="$first" [width]="200" [height]="200" [ngSrc]="about?.image ?? 'defaultImagePath'" alt="{{about.title}}">
+              </figure>
+              <div class="about-card-content-rich-text">
+                <div [innerHTML]="about.description | richTextToHtml "></div>
+              </div>
+            </div>
+          }
+        } @loading (after 100ms; minimum 1s) {
+          <app-home-placeholder [loadingText]="'Loading about...'"></app-home-placeholder>
+        } @error {
+          <p>Something went wrong</p>
+        }
+      </ng-container>
+
+
+    }
+  </div>
+</section>
+
+<section class="main-work-experience">
+  <div class="work-experience-title-container">
+    <h2 class="work-experience-title">Work experience</h2>
+  </div>
+
+  <div class="main-work-experience-container">
+    @if (workExperienceData){
+      <ng-container>
+        @defer {
+          @for (workExperience of workExperienceData; track workExperience.company){
+            <app-works [work]="workExperience"></app-works>
+          }
+        } @loading (after 100ms; minimum 1s) {
+          <app-home-placeholder [loadingText]="'Loading work experience...'"></app-home-placeholder>
+        } @error {
+          <p>Something went wrong</p>
+        }
+      </ng-container>
+    }
+  </div>
+</section>
+
+
+

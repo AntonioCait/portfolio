@@ -1,0 +1,64 @@
+.main-section-projects{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 75vh;
+  .main-section-projects-title-container{
+    max-width: 200px;
+    margin: 0 auto;
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+      text-align: center;
+      background-color: var(--bg-card);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      box-shadow: var(--bg-shadow);
+    }
+  }
+
+}
+.projects-container {
+  padding-bottom: 2rem;
+  min-height: 400px;
+  p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    text-align: center;
+  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* For screens smaller than 1920px (Desktop HD), show 4 columns */
+@media (max-width: 1920px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For screens smaller than 1440px (Laptop L), show 3 columns */
+@media (max-width: 1440px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For screens smaller than 1024px (Laptop), show 2 columns */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For screens smaller than 768px (Tablet), show 1 column */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

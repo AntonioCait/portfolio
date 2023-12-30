@@ -1,0 +1,12 @@
+
+
+<nav class="nav">
+  <div class="nav-links-container">
+    @for (page of pages; track page.title){
+      <div class="nav-link-container">
+        <!-- dynamic routes using angular routelink -->
+        <a [routerLink]="page.route" class="nav-link">{{page.title}}</a>
+      </div>
+    }
+  </div>
+</nav>

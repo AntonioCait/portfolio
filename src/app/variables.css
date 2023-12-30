@@ -1,0 +1,8 @@
+/*css color variables*/
+
+:root {
+  --bg-color: #000000;
+  --text-color: #fff;
+  --nav-color: #181818;
+  --bg-black: #181818;
+}

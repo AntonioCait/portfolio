@@ -1,0 +1,15 @@
+
+<div class="work-card">
+  <div class="work-company-title">
+    <h4>{{work?.company}}</h4>
+  </div>
+  <div class="work-company-position">
+    <p>{{work?.position}}</p>
+  </div>
+  <div class="work-company-date">
+    <p>{{work?.fromDate | date}} - {{work?.present  ? 'Present' : work?.toDate | date}} </p>
+  </div>
+  <div class="work-company-description">
+    <p>{{work?.description}}</p>
+  </div>
+</div>

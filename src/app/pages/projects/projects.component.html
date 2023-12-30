@@ -1,0 +1,27 @@
+
+
+
+
+<section class="main-section-projects">
+  <div class="main-section-projects-title-container">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="projects-container">
+    @defer {
+      <!-- this will be rendered after the rest of the page -->
+      @for (project of projectsData; track project.title){
+        <app-project [project]="project"></app-project>
+      }
+      <!-- @loading is to show a loading message while the data is being fetched -->
+    } @loading (after 100ms; minimum 2s) {
+      <p class="projects-container-loading-paragraph">Loading projects...</p>
+    } @error {
+      <p>Something went wrong</p>
+    }
+  </div>
+</section>
+
+
+
+
