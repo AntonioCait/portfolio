@@ -23,13 +23,6 @@
 .projects-container {
   padding-bottom: 2rem;
   min-height: 400px;
-  p{
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-    text-align: center;
-  }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
